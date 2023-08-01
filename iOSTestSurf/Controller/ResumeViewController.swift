@@ -55,6 +55,11 @@ class ResumeViewController: UIViewController {
         label.textColor = Const.secondaryTextColor
         return label
     }()
+    private let locationImage: UIImageView = {
+        let image = UIImageView()
+        image.image = UIImage(named: "location")
+        return image
+    }()
     private let cityLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 14)
@@ -141,6 +146,8 @@ class ResumeViewController: UIViewController {
         contentView.addSubview(skillStackView)
         contentView.addSubview(aboutMeLabel)
         contentView.addSubview(aboutMeInfoLabel)
+        contentView.addSubview(locationImage)
+
 
     }
     
@@ -190,7 +197,7 @@ class ResumeViewController: UIViewController {
 extension ResumeViewController {
     
     private func setConstraints() {
-        [scrollView, contentView, avatarImageView, nameLabel, descriptionLabel, cityLabel, skillsBackgroundView, mySkillsLabel,editButton, skillStackView, aboutMeLabel, aboutMeInfoLabel, whiteBackground].forEach {
+        [scrollView, contentView, avatarImageView, nameLabel, descriptionLabel, cityLabel, skillsBackgroundView, mySkillsLabel,editButton, skillStackView, aboutMeLabel, aboutMeInfoLabel, whiteBackground, locationImage].forEach {
             $0.translatesAutoresizingMaskIntoConstraints = false
         }
         NSLayoutConstraint.activate([
@@ -222,6 +229,9 @@ extension ResumeViewController {
             
             cityLabel.topAnchor.constraint(equalTo: descriptionLabel.bottomAnchor),
             cityLabel.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
+            
+            locationImage.topAnchor.constraint(equalTo: descriptionLabel.bottomAnchor),
+            locationImage.rightAnchor.constraint(equalTo: cityLabel.leftAnchor),
 
             skillsBackgroundView.leftAnchor.constraint(equalTo: contentView.leftAnchor),
             skillsBackgroundView.rightAnchor.constraint(equalTo: contentView.rightAnchor),

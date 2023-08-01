@@ -12,7 +12,6 @@
 		5C9FAB6C2A78FF6000C27004 /* ResumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9FAB6B2A78FF6000C27004 /* ResumeViewController.swift */; };
 		5C9FAB712A78FF6100C27004 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C9FAB702A78FF6100C27004 /* Assets.xcassets */; };
 		5C9FAB742A78FF6100C27004 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C9FAB722A78FF6100C27004 /* LaunchScreen.storyboard */; };
-		5C9FAB822A794A5600C27004 /* SkillsCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9FAB812A794A5600C27004 /* SkillsCollectionView.swift */; };
 		5C9FAB882A79A07A00C27004 /* SkillTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9FAB872A79A07A00C27004 /* SkillTag.swift */; };
 /* End PBXBuildFile section */
 
@@ -24,7 +23,6 @@
 		5C9FAB702A78FF6100C27004 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C9FAB732A78FF6100C27004 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C9FAB752A78FF6100C27004 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5C9FAB812A794A5600C27004 /* SkillsCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsCollectionView.swift; sourceTree = "<group>"; };
 		5C9FAB872A79A07A00C27004 /* SkillTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillTag.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,7 +70,6 @@
 		5C9FAB7C2A79003800C27004 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				5C9FAB812A794A5600C27004 /* SkillsCollectionView.swift */,
 				5C9FAB872A79A07A00C27004 /* SkillTag.swift */,
 			);
 			path = View;
@@ -158,7 +155,6 @@
 			files = (
 				5C9FAB882A79A07A00C27004 /* SkillTag.swift in Sources */,
 				5C9FAB6C2A78FF6000C27004 /* ResumeViewController.swift in Sources */,
-				5C9FAB822A794A5600C27004 /* SkillsCollectionView.swift in Sources */,
 				5C9FAB682A78FF6000C27004 /* AppDelegate.swift in Sources */,
 				5C9FAB6A2A78FF6000C27004 /* SceneDelegate.swift in Sources */,
 			);

@@ -86,8 +86,9 @@ class ResumeViewController: UIViewController {
     
     private let editButton: UIButton = {
         let button = UIButton()
-        button.setImage(UIImage(named: "Edit"), for: .normal)
         button.addTarget(self, action: #selector(actionEditButton), for: .touchUpInside)
+        button.setImage(UIImage(named: "Edit"), for: .normal)
+
         return button
     }()
     
@@ -201,7 +202,6 @@ class ResumeViewController: UIViewController {
             self.fillSkills()
         }))
         self.present(alert, animated: true)
-        editButton.setImage(UIImage(named: "change"), for: .normal)
     }
 }
 

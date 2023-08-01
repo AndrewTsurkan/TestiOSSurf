@@ -152,6 +152,7 @@ class ResumeViewController: UIViewController {
     }
     
     private func fillSkills() {
+        skillStackView.arrangedSubviews.forEach { $0.removeFromSuperview() }
         let width = UIScreen.main.bounds.width - 32
         var remainingHorizontalSpace: CGFloat = 0
 
@@ -188,6 +189,18 @@ class ResumeViewController: UIViewController {
     }
 
     @objc private func actionEditButton() {
+        let alert = UIAlertController(title: "Добавление навыка", message: "Введите название навыка которым вы владеете", preferredStyle: .alert)
+        alert.addTextField { text in
+            text.placeholder = "Введите значение"
+        }
+        
+        alert.addAction(UIAlertAction(title: "Отмена", style: .default))
+        alert.addAction(UIAlertAction(title: "Добавить", style: .cancel, handler: { _ in
+            guard let text = alert.textFields?.first?.text else { return }
+            self.skills.append(text)
+            self.fillSkills()
+        }))
+        self.present(alert, animated: true)
         editButton.setImage(UIImage(named: "change"), for: .normal)
     }
 }
